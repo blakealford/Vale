@@ -1,7 +1,135 @@
+:root {
+  font-size: 16px;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
-  background-color: #0b0c0f;
+  background-color: #050916;  
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* #22252a */
+
+
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #d5557c;
+}
+
+.navbar {
+  width: 3rem;
+  height: 100vh;
+  padding: 0;
+  position: fixed;
+  background-image: linear-gradient(#d5557c, #9867f0)
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: #ffffff;
+  text-decoration: none;
+  filter: opacity(0.7); 
+  transition: 600ms;
+  font-size: 23px;
+}
+
+.nav-link:hover {
+  filter: opacity(1);
+  /* background: #1b1b20;  */
+  color: #ffffff;
+
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+  color: #252525;
+}
+
+.title h1 {
+  position: relative;
+  top: 300px;
+  left: 150;
+}
+
+.title p {
+  position: relative;
+  top: 150px;
+  left: 150;
+}
+
+.title img {
+  position: relative;
+  top: 70px;
+  left: 445px;
+  width: 150px;
+
+}
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbox {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 53px;
+  transition: 0.4s linear;
+  overflow: hidden;
+}
+
+.searchbox__input {
+  display: block;
+  appearance: none;
+  width: 200%;
+
+  border: none;
+  outline: none;
+  border-radius: 50px;
+
+  background-color: #24233A;
+
+  padding: 15px;
+  color: #24233A;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s linear;
+}
+
+.searchbox_input placeholder {
+  color: #24233A;
+
 }
